@@ -1,3 +1,9 @@
+# revision 16085
+# category Package
+# catalog-ctan /macros/latex/contrib/preprint
+# catalog-date 2007-01-06 21:10:04 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-preprint
 Version:	20070106
 Release:	1
@@ -69,6 +75,7 @@ permits counters to be subnumbered.
 %doc %{_texmfdistdir}/source/latex/preprint/sublabel.drv
 %doc %{_texmfdistdir}/source/latex/preprint/sublabel.dtx
 %doc %{_texmfdistdir}/source/latex/preprint/sublabel.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -79,3 +86,5 @@ permits counters to be subnumbered.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
