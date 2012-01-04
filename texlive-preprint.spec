@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-preprint
 Version:	20070106
-Release:	1
+Release:	2
 Summary:	A bundle of packages provided "as is"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preprint
