@@ -75,3 +75,17 @@ permits counters to be subnumbered.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070106-2
++ Revision: 755059
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070106-1
++ Revision: 719294
+- texlive-preprint
+- texlive-preprint
+- texlive-preprint
+- texlive-preprint
+
