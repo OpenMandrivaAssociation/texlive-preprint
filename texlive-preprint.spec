@@ -1,16 +1,17 @@
-# revision 16085
+# revision 30447
 # category Package
 # catalog-ctan /macros/latex/contrib/preprint
-# catalog-date 2007-01-06 21:10:04 +0100
-# catalog-license lppl
-# catalog-version undef
+# catalog-date 2013-05-13 11:38:32 +0200
+# catalog-license collection
+# catalog-version 2011
 Name:		texlive-preprint
-Version:	20070106
-Release:	2
+Epoch:		1
+Version:	2011
+Release:	1
 Summary:	A bundle of packages provided "as is"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preprint
-License:	LPPL
+License:	COLLECTION
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.source.tar.xz
@@ -42,8 +43,7 @@ permits counters to be subnumbered.
 %{_texmfdistdir}/tex/latex/preprint/figcaps.sty
 %{_texmfdistdir}/tex/latex/preprint/fullpage.sty
 %{_texmfdistdir}/tex/latex/preprint/sublabel.sty
-%doc %{_texmfdistdir}/doc/latex/preprint/00readme.txt
-%doc %{_texmfdistdir}/doc/latex/preprint/00readme.unix
+%doc %{_texmfdistdir}/doc/latex/preprint/README
 %doc %{_texmfdistdir}/doc/latex/preprint/authblk.pdf
 %doc %{_texmfdistdir}/doc/latex/preprint/balance.pdf
 %doc %{_texmfdistdir}/doc/latex/preprint/figcaps.pdf
@@ -75,17 +75,3 @@ permits counters to be subnumbered.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070106-2
-+ Revision: 755059
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070106-1
-+ Revision: 719294
-- texlive-preprint
-- texlive-preprint
-- texlive-preprint
-- texlive-preprint
-
