@@ -7,7 +7,7 @@
 Name:		texlive-preprint
 Epoch:		1
 Version:	2011
-Release:	2
+Release:	3
 Summary:	A bundle of packages provided "as is"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preprint
