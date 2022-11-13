@@ -1,20 +1,14 @@
-# revision 30447
-# category Package
-# catalog-ctan /macros/latex/contrib/preprint
-# catalog-date 2013-05-13 11:38:32 +0200
-# catalog-license collection
-# catalog-version 2011
 Name:		texlive-preprint
 Epoch:		1
-Version:	2011
-Release:	10
+Version:	30447
+Release:	1
 Summary:	A bundle of packages provided "as is"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preprint
 License:	COLLECTION
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preprint.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ margins and set a fixed page style, and - sublabel, which
 permits counters to be subnumbered.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -68,7 +62,8 @@ permits counters to be subnumbered.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
